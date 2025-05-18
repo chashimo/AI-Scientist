@@ -59,17 +59,13 @@ export OPENAI_API_KEY="your-openai-key-here"
 
 ## Running the Experiment
 
-1. Run the experiment to generate narratives, collect YouTube data, and classify results:
+Run the experiment to generate narratives, collect YouTube data, and classify results:
 
 ```bash
 python experiment.py --out_dir run_0
 ```
 
-2. Visualize evaluation metrics across different runs:
-
-```bash
-python plot.py
-```
+Note: `python plot.py` is not required.
 
 ---
 
