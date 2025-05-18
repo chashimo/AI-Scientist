@@ -1,0 +1,13 @@
+{
+  "youtube_propaganda_detection": {
+    "means": {
+      "hit_rate": 0.267,
+      "hits": 8,
+      "total_videos": 30,
+      "out_files": {
+        "jsonl": "run_1/results_propaganda.jsonl",
+        "report_md": "run_1/report_3614.md"
+      }
+    }
+  }
+}

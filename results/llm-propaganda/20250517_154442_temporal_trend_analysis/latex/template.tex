@@ -1,0 +1,877 @@
+\documentclass{article}
+
+\usepackage{url}
+
+\usepackage{fontspec}
+\setmainfont{Noto Sans CJK JP}
+
+\usepackage{hyperref}
+\usepackage{geometry}
+\geometry{margin=1in}
+\title{OSINT Report: Automated Detection of Anti-Japan Propaganda on YouTube}
+\author{Automated by Sakana AI Scientist}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\section*{Propaganda Narratives and Examples}
+\noindent
+\begin{tabular}{p{0.98\textwidth}}
+\textbf{Propaganda Narrative:} 中國強調歷史上的侵略行為，指出日本在二戰期間對亞洲鄰國的侵略和暴行，特別是對中國的南京大屠殺，並強調日本至今未對此負起足夠的責任。 \\
+(English: ) \\
+\end{tabular}
+
+\noindent
+\begin{tabular}{p{0.98\textwidth}}
+Title: 二戰日本侵華 \#ww2 \#1931 \#1945 \#日本 \#中國 \#台灣 \#japan \#china \#taiwan \\
+(English: ) \\
+URL: \url{https://www.youtube.com/watch?v=A1q8iU_Lqjg} \\
+Score: 3 \\
+\end{tabular}
+\vspace{0.5em}
+
+\noindent
+\begin{tabular}{p{0.98\textwidth}}
+Title: 二戰時，為什麼日本決定向美國開戰？丨劉老濕 \\
+(English: ) \\
+URL: \url{https://www.youtube.com/watch?v=MaVXeNQxP5M} \\
+Score: 3 \\
+\end{tabular}
+\vspace{0.5em}
+
+\noindent
+\begin{tabular}{p{0.98\textwidth}}
+Title: 辟谣：二战时期，日本入侵亚洲，是赶走殖民者并解放亚洲？【前线分析】 \\
+(English: ) \\
+URL: \url{https://www.youtube.com/watch?v=uVSiVQGWa7k} \\
+Score: 3 \\
+\end{tabular}
+\vspace{0.5em}
+
+\noindent
+\begin{tabular}{p{0.98\textwidth}}
+Title: 二战中的日本，为何最终只能走向战争的不归路？ \\
+(English: ) \\
+URL: \url{https://www.youtube.com/watch?v=Ml1xnfdotOc} \\
+Score: 3 \\
+\end{tabular}
+\vspace{0.5em}
+
+\noindent
+\begin{tabular}{p{0.98\textwidth}}
+Title: 二战为什么只有中国抵抗日本入侵？其他亚洲国家在干什么？ \\
+(English: ) \\
+URL: \url{https://www.youtube.com/watch?v=xEyIcTCbSyQ} \\
+Score: 3 \\
+\end{tabular}
+\vspace{0.5em}
+
+\noindent
+\begin{tabular}{p{0.98\textwidth}}
+Title: 袁腾飞视频：日本右翼不承认南京大屠杀的原因 \\
+(English: ) \\
+URL: \url{https://www.youtube.com/watch?v=GpY2AwQaTjg} \\
+Score: 3 \\
+\end{tabular}
+\vspace{0.5em}
+
+\noindent
+\begin{tabular}{p{0.98\textwidth}}
+Title: 南京大屠殺原來這樣發生！揪出那個時代的「中共同路人」！  -《動畫世界史中國篇》EP5｜臺灣吧TaiwanBar \\
+(English: ) \\
+URL: \url{https://www.youtube.com/watch?v=AV_CAHWGsuw} \\
+Score: 3 \\
+\end{tabular}
+\vspace{0.5em}
+
+\noindent
+\begin{tabular}{p{0.98\textwidth}}
+Title: 袁腾飞\_日本为什么不承认南京大屠杀\#shorts \#china \#history  \#搞笑 \#正能量 \#分享 \#熱門 \\
+(English: ) \\
+URL: \url{https://www.youtube.com/watch?v=LQbJfzyMbcc} \\
+Score: 3 \\
+\end{tabular}
+\vspace{0.5em}
+
+\noindent
+\begin{tabular}{p{0.98\textwidth}}
+Title: 为什么85年才说南京大屠杀？\#shorts  \#崔永元 \#仇恨教育 \#最勇敢的人 \\
+(English: ) \\
+URL: \url{https://www.youtube.com/watch?v=TCHxN3_a7-Q} \\
+Score: 3 \\
+\end{tabular}
+\vspace{0.5em}
+
+\noindent
+\begin{tabular}{p{0.98\textwidth}}
+Title: 南京大屠杀之真相（南京保卫战） \\
+(English: ) \\
+URL: \url{https://www.youtube.com/watch?v=_esNzttsZ-0} \\
+Score: 3 \\
+\end{tabular}
+\vspace{0.5em}
+
+\noindent
+\begin{tabular}{p{0.98\textwidth}}
+Title: 日本的战争责任 \\
+(English: ) \\
+URL: \url{https://www.youtube.com/watch?v=mVUp99L1Upk} \\
+Score: 3 \\
+\end{tabular}
+\vspace{0.5em}
+
+\noindent
+\begin{tabular}{p{0.98\textwidth}}
+Title: 日本人是二战受害者，那谁才是大反派？ \\
+(English: ) \\
+URL: \url{https://www.youtube.com/watch?v=OcFWl4eOHaI} \\
+Score: 3 \\
+\end{tabular}
+\vspace{0.5em}
+
+\noindent
+\begin{tabular}{p{0.98\textwidth}}
+Title: 《东京审判》背后的真相：日本天皇逃脱战争责任，美国帮日本保留“天皇制” \\
+(English: ) \\
+URL: \url{https://www.youtube.com/watch?v=tMtgvAgw36s} \\
+Score: 3 \\
+\end{tabular}
+\vspace{0.5em}
+
+\noindent
+\begin{tabular}{p{0.98\textwidth}}
+Title: 石破茂刻意提到“战败”一词 曾表示日本在战败后未能正视战争责任\#海峡新干线\#石破茂 \#二战 \#抗战 \\
+(English: ) \\
+URL: \url{https://www.youtube.com/watch?v=CNi63u2iSBA} \\
+Score: 3 \\
+\end{tabular}
+\vspace{0.5em}
+
+\noindent
+\begin{tabular}{p{0.98\textwidth}}
+Title: What if Japan Never Attacked Pearl Harbor? \\
+(English: ) \\
+URL: \url{https://www.youtube.com/watch?v=BCSeD6ivtHg} \\
+Score: 3 \\
+\end{tabular}
+\vspace{0.5em}
+
+\noindent
+\begin{tabular}{p{0.98\textwidth}}
+Title: Japanese Invasion of China: The Battle of Shanghai 1937 (Sino-Japanese War Documentary) \\
+(English: ) \\
+URL: \url{https://www.youtube.com/watch?v=dPwoknKVnxs} \\
+Score: 3 \\
+\end{tabular}
+\vspace{0.5em}
+
+\noindent
+\begin{tabular}{p{0.98\textwidth}}
+Title: How Every Country Reacted To The Russo Japanese War \\
+(English: ) \\
+URL: \url{https://www.youtube.com/watch?v=q0IMyAv3NWo} \\
+Score: 3 \\
+\end{tabular}
+\vspace{0.5em}
+
+\noindent
+\begin{tabular}{p{0.98\textwidth}}
+Title: How The World Reacted To The Atomic Bombings On Japan \\
+(English: ) \\
+URL: \url{https://www.youtube.com/watch?v=5jkOaVN2_F8} \\
+Score: 3 \\
+\end{tabular}
+\vspace{0.5em}
+
+\noindent
+\begin{tabular}{p{0.98\textwidth}}
+Title: the Nanjing Massacre: The Dark Truth Behind One of History\&\#39;s Largest Atrocities at ww2 \#shorts \\
+(English: ) \\
+URL: \url{https://www.youtube.com/watch?v=BmbKyOFwkwk} \\
+Score: 3 \\
+\end{tabular}
+\vspace{0.5em}
+
+\noindent
+\begin{tabular}{p{0.98\textwidth}}
+Title: The sad truth about the Nanjing Massacre in Nanjing, China \\
+(English: ) \\
+URL: \url{https://www.youtube.com/watch?v=1lECvuvw4RE} \\
+Score: 3 \\
+\end{tabular}
+\vspace{0.5em}
+
+\noindent
+\begin{tabular}{p{0.98\textwidth}}
+Title: A Brief Story about The Nanjing Massacre 🇨🇳🇯🇵\#facts \#history \#knowledge \\
+(English: ) \\
+URL: \url{https://www.youtube.com/watch?v=S5Yj6gkyJL0} \\
+Score: 3 \\
+\end{tabular}
+\vspace{0.5em}
+
+\noindent
+\begin{tabular}{p{0.98\textwidth}}
+Title: The Nanjing Massacre and Japanese Atrocities during the Second Sino-Japanese War \#ytshorts \#history \\
+(English: ) \\
+URL: \url{https://www.youtube.com/watch?v=gKD-9X1J8Qk} \\
+Score: 3 \\
+\end{tabular}
+\vspace{0.5em}
+
+\noindent
+\begin{tabular}{p{0.98\textwidth}}
+Title: The Truth of the Nanjing Massacre: A Historical Investigation \#historyshorts \#facts \#viral \\
+(English: ) \\
+URL: \url{https://www.youtube.com/watch?v=KjXQTsYMqNY} \\
+Score: 3 \\
+\end{tabular}
+\vspace{0.5em}
+
+\noindent
+\begin{tabular}{p{0.98\textwidth}}
+Title: How different countries respond to War Crime accusations \\
+(English: ) \\
+URL: \url{https://www.youtube.com/watch?v=vXIZAloNxuo} \\
+Score: 3 \\
+\end{tabular}
+\vspace{0.5em}
+
+\noindent
+\begin{tabular}{p{0.98\textwidth}}
+Title: WW2 - Second Sino-Japanese War, 1937-1941 \\
+(English: ) \\
+URL: \url{https://www.youtube.com/watch?v=mTkRBg2Dwz0} \\
+Score: 3 \\
+\end{tabular}
+\vspace{0.5em}
+
+\noindent
+\begin{tabular}{p{0.98\textwidth}}
+Title: Japanese Occupation of Korea and World War 2 || Animated History \\
+(English: ) \\
+URL: \url{https://www.youtube.com/watch?v=9kCavjF1_04} \\
+Score: 3 \\
+\end{tabular}
+\vspace{0.5em}
+
+\noindent
+\begin{tabular}{p{0.98\textwidth}}
+Title: Why Japan\&\#39;s Military is Gladly Getting Ready for War \\
+(English: ) \\
+URL: \url{https://www.youtube.com/watch?v=mx5CckLSjLM} \\
+Score: 3 \\
+\end{tabular}
+\vspace{0.5em}
+
+\noindent
+\begin{tabular}{p{0.98\textwidth}}
+Title: Why was Japan Allowed to Keep its Emperor After World War 2? (Short Animated Documentary) \\
+(English: ) \\
+URL: \url{https://www.youtube.com/watch?v=-6VRESxVT4w} \\
+Score: 3 \\
+\end{tabular}
+\vspace{0.5em}
+
+\vspace{1em}
+\noindent
+\begin{tabular}{p{0.98\textwidth}}
+\textbf{Propaganda Narrative:} 日本政府的歷史修正主義和軍事擴張政策對亞洲和世界和平構成威脅。 \\
+(English: ) \\
+\end{tabular}
+
+\noindent
+\begin{tabular}{p{0.98\textwidth}}
+Title: 日本军事扩张路线“灭朝鲜吞中国” \\
+(English: ) \\
+URL: \url{https://www.youtube.com/watch?v=Ayw4_7TBPF8} \\
+Score: 5 \\
+\end{tabular}
+\vspace{0.5em}
+
+\noindent
+\begin{tabular}{p{0.98\textwidth}}
+Title: 怎么看日本历史修正主义 \\
+(English: ) \\
+URL: \url{https://www.youtube.com/watch?v=0aBnKKfx_XE} \\
+Score: 3 \\
+\end{tabular}
+\vspace{0.5em}
+
+\noindent
+\begin{tabular}{p{0.98\textwidth}}
+Title: 日本电视台（NTV）拍的《南京事件II--检验历史修正主义》;日本テレビ局（NTV）の「南京事件II - 歴史的修正主義のテスト」 \\
+(English: ) \\
+URL: \url{https://www.youtube.com/watch?v=9ZcR6IBJ1Bw} \\
+Score: 3 \\
+\end{tabular}
+\vspace{0.5em}
+
+\noindent
+\begin{tabular}{p{0.98\textwidth}}
+Title: 最\&quot;政治正確\&quot;的中國政治老師！一名中國老師談資本主義vs社會主義 剖析失業=資本主義的頑疾！換作社會主義卻僅是\&quot;發展中的問題\&quot; 該師幽默：政治課講的是立場 │【國際大現場】20230110│三立新聞台 \\
+(English: ) \\
+URL: \url{https://www.youtube.com/watch?v=vaJOtuXqt8Q} \\
+Score: 3 \\
+\end{tabular}
+\vspace{0.5em}
+
+\noindent
+\begin{tabular}{p{0.98\textwidth}}
+Title: 日本“对外扩张”之谜『Eng Sub』Why was Japan an expansionist? \\
+(English: ) \\
+URL: \url{https://www.youtube.com/watch?v=leouVip5YJQ} \\
+Score: 3 \\
+\end{tabular}
+\vspace{0.5em}
+
+\noindent
+\begin{tabular}{p{0.98\textwidth}}
+Title: 险恶图谋昭然若揭！日本发布新版海洋政策文件折射扩军野心\#东南军情  \#日本 \#日本扩张军事化野心 \\
+(English: ) \\
+URL: \url{https://www.youtube.com/watch?v=jjIDbxuoXh8} \\
+Score: 3 \\
+\end{tabular}
+\vspace{0.5em}
+
+\noindent
+\begin{tabular}{p{0.98\textwidth}}
+Title: 军事新闻-日本聚力追求“军事扩张” \\
+(English: ) \\
+URL: \url{https://www.youtube.com/watch?v=v_5ih7eVu4s} \\
+Score: 3 \\
+\end{tabular}
+\vspace{0.5em}
+
+\noindent
+\begin{tabular}{p{0.98\textwidth}}
+Title: 【軍事威脅\_國際新聞】安倍：日本將制衡中國對亞太軍事威脅 \\
+(English: ) \\
+URL: \url{https://www.youtube.com/watch?v=7VTHk0AAEPI} \\
+Score: 3 \\
+\end{tabular}
+\vspace{0.5em}
+
+\noindent
+\begin{tabular}{p{0.98\textwidth}}
+Title: 中國是威脅！日本2022「防衛白皮書」序言就提台海 AI強化反擊軍力！？【關鍵時刻】20220722-1 劉寶傑 黃世聰 林廷輝 李正皓 吳子嘉 \\
+(English: ) \\
+URL: \url{https://www.youtube.com/watch?v=mTHyiJw4iP8} \\
+Score: 3 \\
+\end{tabular}
+\vspace{0.5em}
+
+\noindent
+\begin{tabular}{p{0.98\textwidth}}
+Title: 美日审议防卫指针 讨论\&quot;灰色区域\&quot;安全威胁 \\
+(English: ) \\
+URL: \url{https://www.youtube.com/watch?v=TC1W0hY-EqE} \\
+Score: 3 \\
+\end{tabular}
+\vspace{0.5em}
+
+\noindent
+\begin{tabular}{p{0.98\textwidth}}
+Title: \#shorts 日本參戰中國絕不會手軟? 蔡正元:民族仇恨使然@中天新聞CtiNews \\
+(English: ) \\
+URL: \url{https://www.youtube.com/watch?v=WVsFbtvu82k} \\
+Score: 3 \\
+\end{tabular}
+\vspace{0.5em}
+
+\noindent
+\begin{tabular}{p{0.98\textwidth}}
+Title: Playing the Victim | Historical Revisionism and Japan \\
+(English: ) \\
+URL: \url{https://www.youtube.com/watch?v=lnAC-Y9p_sY} \\
+Score: 3 \\
+\end{tabular}
+\vspace{0.5em}
+
+\noindent
+\begin{tabular}{p{0.98\textwidth}}
+Title: 5 Deadly Sins of Abe\&\#39;s Historical Revisionism 安倍さんの歴史修正主義の５つの大罪 [日本語字幕付き EN Subs] 中野晃一 \\
+(English: ) \\
+URL: \url{https://www.youtube.com/watch?v=INkqYR4R40I} \\
+Score: 3 \\
+\end{tabular}
+\vspace{0.5em}
+
+\noindent
+\begin{tabular}{p{0.98\textwidth}}
+Title: Japanese scholars criticize Abe\&\#39;s historical revisionism \\
+(English: ) \\
+URL: \url{https://www.youtube.com/watch?v=VeP2K5jDXtI} \\
+Score: 3 \\
+\end{tabular}
+\vspace{0.5em}
+
+\noindent
+\begin{tabular}{p{0.98\textwidth}}
+Title: U.S. scholars against Japan′s historical revisionism   미 역사학자들″집단성명 철회없다＆qu \\
+(English: ) \\
+URL: \url{https://www.youtube.com/watch?v=jZOveO3lvco} \\
+Score: 3 \\
+\end{tabular}
+\vspace{0.5em}
+
+\noindent
+\begin{tabular}{p{0.98\textwidth}}
+Title: Historical revisionism exposed in Japan\&\#39;s newly reviewed textbooks \\
+(English: ) \\
+URL: \url{https://www.youtube.com/watch?v=anO3r5C-tHA} \\
+Score: 3 \\
+\end{tabular}
+\vspace{0.5em}
+
+\noindent
+\begin{tabular}{p{0.98\textwidth}}
+Title: Japan cabinet approves draft laws to expand military role \\
+(English: ) \\
+URL: \url{https://www.youtube.com/watch?v=uYNen-J9rXw} \\
+Score: 3 \\
+\end{tabular}
+\vspace{0.5em}
+
+\noindent
+\begin{tabular}{p{0.98\textwidth}}
+Title: What does Japan\&\#39;s military expansion mean for the region? | Inside Story \\
+(English: ) \\
+URL: \url{https://www.youtube.com/watch?v=pQKK5tgUzuo} \\
+Score: 3 \\
+\end{tabular}
+\vspace{0.5em}
+
+\noindent
+\begin{tabular}{p{0.98\textwidth}}
+Title: Japan military expansion: US and Japan revise Japan’s defense doctrine in face of rising China \\
+(English: ) \\
+URL: \url{https://www.youtube.com/watch?v=cG-AA6l0prQ} \\
+Score: 3 \\
+\end{tabular}
+\vspace{0.5em}
+
+\noindent
+\begin{tabular}{p{0.98\textwidth}}
+Title: North Korea Slams Japan\&\#39;s Military Expansion | TaiwanPlus News \\
+(English: ) \\
+URL: \url{https://www.youtube.com/watch?v=YogSuR5PX5M} \\
+Score: 3 \\
+\end{tabular}
+\vspace{0.5em}
+
+\noindent
+\begin{tabular}{p{0.98\textwidth}}
+Title: Why Japan HATES Korea! \#japan \#shorts \\
+(English: ) \\
+URL: \url{https://www.youtube.com/watch?v=8BaUdBXZKY0} \\
+Score: 3 \\
+\end{tabular}
+\vspace{0.5em}
+
+\noindent
+\begin{tabular}{p{0.98\textwidth}}
+Title: World War II In Color - Episode 17/23: The Untold Threat to World Peace - Japan\&\#39;s Rise to Power \\
+(English: ) \\
+URL: \url{https://www.youtube.com/watch?v=42r3rhwdgQw} \\
+Score: 3 \\
+\end{tabular}
+\vspace{0.5em}
+
+\noindent
+\begin{tabular}{p{0.98\textwidth}}
+Title: Does America Pose the Greatest Threat to World Peace? \#GlennGreenwald \#GZW133 \#C1 \\
+(English: ) \\
+URL: \url{https://www.youtube.com/watch?v=nJcPdi_lbhk} \\
+Score: 3 \\
+\end{tabular}
+\vspace{0.5em}
+
+\noindent
+\begin{tabular}{p{0.98\textwidth}}
+Title: 【SSO】World military threat and what we can do for world peace \\
+(English: ) \\
+URL: \url{https://www.youtube.com/watch?v=Gj7Bk6KxMoU} \\
+Score: 3 \\
+\end{tabular}
+\vspace{0.5em}
+
+\noindent
+\begin{tabular}{p{0.98\textwidth}}
+Title: Five Eyes: \#Japan Breaks New Ground | \#Global intelligence | \#shorts \#breakingnews \#youtubeshorts \\
+(English: ) \\
+URL: \url{https://www.youtube.com/watch?v=APmZG5RGONg} \\
+Score: 3 \\
+\end{tabular}
+\vspace{0.5em}
+
+\vspace{1em}
+\noindent
+\begin{tabular}{p{0.98\textwidth}}
+\textbf{Propaganda Narrative:} 歷史不公與現代挑釁：重新審視中日關係 \\
+(English: ) \\
+\end{tabular}
+
+\noindent
+\begin{tabular}{p{0.98\textwidth}}
+Title: Simulated Video Title for 重新審視中日關係 \\
+(English: ) \\
+URL: \url{https://www.youtube.com/watch?v=dQw4w9WgXcQ} \\
+Score: 3 \\
+\end{tabular}
+\vspace{0.5em}
+
+\noindent
+\begin{tabular}{p{0.98\textwidth}}
+Title: Simulated Video Title for 重新審視中日關係 \\
+(English: ) \\
+URL: \url{https://www.youtube.com/watch?v=dQw4w9WgXcQ} \\
+Score: 3 \\
+\end{tabular}
+\vspace{0.5em}
+
+\noindent
+\begin{tabular}{p{0.98\textwidth}}
+Title: Simulated Video Title for historical injustice in China-Japan relations \\
+(English: ) \\
+URL: \url{https://www.youtube.com/watch?v=dQw4w9WgXcQ} \\
+Score: 3 \\
+\end{tabular}
+\vspace{0.5em}
+
+\noindent
+\begin{tabular}{p{0.98\textwidth}}
+Title: Simulated Video Title for historical injustice in China-Japan relations \\
+(English: ) \\
+URL: \url{https://www.youtube.com/watch?v=dQw4w9WgXcQ} \\
+Score: 3 \\
+\end{tabular}
+\vspace{0.5em}
+
+\noindent
+\begin{tabular}{p{0.98\textwidth}}
+Title: Simulated Video Title for historical injustice in China-Japan relations \\
+(English: ) \\
+URL: \url{https://www.youtube.com/watch?v=dQw4w9WgXcQ} \\
+Score: 3 \\
+\end{tabular}
+\vspace{0.5em}
+
+\noindent
+\begin{tabular}{p{0.98\textwidth}}
+Title: Simulated Video Title for modern provocations in China-Japan relations \\
+(English: ) \\
+URL: \url{https://www.youtube.com/watch?v=dQw4w9WgXcQ} \\
+Score: 3 \\
+\end{tabular}
+\vspace{0.5em}
+
+\noindent
+\begin{tabular}{p{0.98\textwidth}}
+Title: Simulated Video Title for modern provocations in China-Japan relations \\
+(English: ) \\
+URL: \url{https://www.youtube.com/watch?v=dQw4w9WgXcQ} \\
+Score: 3 \\
+\end{tabular}
+\vspace{0.5em}
+
+\noindent
+\begin{tabular}{p{0.98\textwidth}}
+Title: Simulated Video Title for modern provocations in China-Japan relations \\
+(English: ) \\
+URL: \url{https://www.youtube.com/watch?v=dQw4w9WgXcQ} \\
+Score: 3 \\
+\end{tabular}
+\vspace{0.5em}
+
+\noindent
+\begin{tabular}{p{0.98\textwidth}}
+Title: Simulated Video Title for modern provocations in China-Japan relations \\
+(English: ) \\
+URL: \url{https://www.youtube.com/watch?v=dQw4w9WgXcQ} \\
+Score: 3 \\
+\end{tabular}
+\vspace{0.5em}
+
+\vspace{1em}
+\noindent
+\begin{tabular}{p{0.98\textwidth}}
+\textbf{Propaganda Narrative:} 中國強調歷史問題，指出日本在二戰期間的侵略行為和戰爭罪行，強調日本未充分承認和反省歷史。這種敘事旨在塑造日本作為不可信賴和好戰的形象，並強調中國在二戰中的受害者地位。 \\
+(English: ) \\
+\end{tabular}
+
+\noindent
+\begin{tabular}{p{0.98\textwidth}}
+Title: Simulated Video Title for 日本二戰侵略行為 \\
+(English: ) \\
+URL: \url{https://www.youtube.com/watch?v=dQw4w9WgXcQ} \\
+Score: 3 \\
+\end{tabular}
+\vspace{0.5em}
+
+\noindent
+\begin{tabular}{p{0.98\textwidth}}
+Title: Simulated Video Title for 日本二戰侵略行為 \\
+(English: ) \\
+URL: \url{https://www.youtube.com/watch?v=dQw4w9WgXcQ} \\
+Score: 3 \\
+\end{tabular}
+\vspace{0.5em}
+
+\noindent
+\begin{tabular}{p{0.98\textwidth}}
+Title: Simulated Video Title for 日本二戰侵略行為 \\
+(English: ) \\
+URL: \url{https://www.youtube.com/watch?v=dQw4w9WgXcQ} \\
+Score: 3 \\
+\end{tabular}
+\vspace{0.5em}
+
+\noindent
+\begin{tabular}{p{0.98\textwidth}}
+Title: Simulated Video Title for 日本二戰侵略行為 \\
+(English: ) \\
+URL: \url{https://www.youtube.com/watch?v=dQw4w9WgXcQ} \\
+Score: 3 \\
+\end{tabular}
+\vspace{0.5em}
+
+\noindent
+\begin{tabular}{p{0.98\textwidth}}
+Title: Simulated Video Title for 日本二戰侵略行為 \\
+(English: ) \\
+URL: \url{https://www.youtube.com/watch?v=dQw4w9WgXcQ} \\
+Score: 3 \\
+\end{tabular}
+\vspace{0.5em}
+
+\noindent
+\begin{tabular}{p{0.98\textwidth}}
+Title: Simulated Video Title for 中國二戰受害者歷史 \\
+(English: ) \\
+URL: \url{https://www.youtube.com/watch?v=dQw4w9WgXcQ} \\
+Score: 3 \\
+\end{tabular}
+\vspace{0.5em}
+
+\noindent
+\begin{tabular}{p{0.98\textwidth}}
+Title: Simulated Video Title for 中國二戰受害者歷史 \\
+(English: ) \\
+URL: \url{https://www.youtube.com/watch?v=dQw4w9WgXcQ} \\
+Score: 3 \\
+\end{tabular}
+\vspace{0.5em}
+
+\noindent
+\begin{tabular}{p{0.98\textwidth}}
+Title: Simulated Video Title for 中國二戰受害者歷史 \\
+(English: ) \\
+URL: \url{https://www.youtube.com/watch?v=dQw4w9WgXcQ} \\
+Score: 3 \\
+\end{tabular}
+\vspace{0.5em}
+
+\noindent
+\begin{tabular}{p{0.98\textwidth}}
+Title: Simulated Video Title for 中國二戰受害者歷史 \\
+(English: ) \\
+URL: \url{https://www.youtube.com/watch?v=dQw4w9WgXcQ} \\
+Score: 3 \\
+\end{tabular}
+\vspace{0.5em}
+
+\noindent
+\begin{tabular}{p{0.98\textwidth}}
+Title: Simulated Video Title for 中國二戰受害者歷史 \\
+(English: ) \\
+URL: \url{https://www.youtube.com/watch?v=dQw4w9WgXcQ} \\
+Score: 3 \\
+\end{tabular}
+\vspace{0.5em}
+
+\noindent
+\begin{tabular}{p{0.98\textwidth}}
+Title: Simulated Video Title for 日本戰爭罪行未反省 \\
+(English: ) \\
+URL: \url{https://www.youtube.com/watch?v=dQw4w9WgXcQ} \\
+Score: 3 \\
+\end{tabular}
+\vspace{0.5em}
+
+\noindent
+\begin{tabular}{p{0.98\textwidth}}
+Title: Simulated Video Title for 日本戰爭罪行未反省 \\
+(English: ) \\
+URL: \url{https://www.youtube.com/watch?v=dQw4w9WgXcQ} \\
+Score: 3 \\
+\end{tabular}
+\vspace{0.5em}
+
+\noindent
+\begin{tabular}{p{0.98\textwidth}}
+Title: Simulated Video Title for 日本戰爭罪行未反省 \\
+(English: ) \\
+URL: \url{https://www.youtube.com/watch?v=dQw4w9WgXcQ} \\
+Score: 3 \\
+\end{tabular}
+\vspace{0.5em}
+
+\noindent
+\begin{tabular}{p{0.98\textwidth}}
+Title: Simulated Video Title for 日本戰爭罪行未反省 \\
+(English: ) \\
+URL: \url{https://www.youtube.com/watch?v=dQw4w9WgXcQ} \\
+Score: 3 \\
+\end{tabular}
+\vspace{0.5em}
+
+\noindent
+\begin{tabular}{p{0.98\textwidth}}
+Title: Simulated Video Title for 日本戰爭罪行未反省 \\
+(English: ) \\
+URL: \url{https://www.youtube.com/watch?v=dQw4w9WgXcQ} \\
+Score: 3 \\
+\end{tabular}
+\vspace{0.5em}
+
+\noindent
+\begin{tabular}{p{0.98\textwidth}}
+Title: Simulated Video Title for Japan WWII aggression history \\
+(English: ) \\
+URL: \url{https://www.youtube.com/watch?v=dQw4w9WgXcQ} \\
+Score: 3 \\
+\end{tabular}
+\vspace{0.5em}
+
+\noindent
+\begin{tabular}{p{0.98\textwidth}}
+Title: Simulated Video Title for Japan WWII aggression history \\
+(English: ) \\
+URL: \url{https://www.youtube.com/watch?v=dQw4w9WgXcQ} \\
+Score: 3 \\
+\end{tabular}
+\vspace{0.5em}
+
+\noindent
+\begin{tabular}{p{0.98\textwidth}}
+Title: Simulated Video Title for Japan WWII aggression history \\
+(English: ) \\
+URL: \url{https://www.youtube.com/watch?v=dQw4w9WgXcQ} \\
+Score: 3 \\
+\end{tabular}
+\vspace{0.5em}
+
+\noindent
+\begin{tabular}{p{0.98\textwidth}}
+Title: Simulated Video Title for Japan WWII aggression history \\
+(English: ) \\
+URL: \url{https://www.youtube.com/watch?v=dQw4w9WgXcQ} \\
+Score: 3 \\
+\end{tabular}
+\vspace{0.5em}
+
+\noindent
+\begin{tabular}{p{0.98\textwidth}}
+Title: Simulated Video Title for Japan WWII aggression history \\
+(English: ) \\
+URL: \url{https://www.youtube.com/watch?v=dQw4w9WgXcQ} \\
+Score: 3 \\
+\end{tabular}
+\vspace{0.5em}
+
+\noindent
+\begin{tabular}{p{0.98\textwidth}}
+Title: Simulated Video Title for China as WWII victim narrative \\
+(English: ) \\
+URL: \url{https://www.youtube.com/watch?v=dQw4w9WgXcQ} \\
+Score: 3 \\
+\end{tabular}
+\vspace{0.5em}
+
+\noindent
+\begin{tabular}{p{0.98\textwidth}}
+Title: Simulated Video Title for China as WWII victim narrative \\
+(English: ) \\
+URL: \url{https://www.youtube.com/watch?v=dQw4w9WgXcQ} \\
+Score: 3 \\
+\end{tabular}
+\vspace{0.5em}
+
+\noindent
+\begin{tabular}{p{0.98\textwidth}}
+Title: Simulated Video Title for China as WWII victim narrative \\
+(English: ) \\
+URL: \url{https://www.youtube.com/watch?v=dQw4w9WgXcQ} \\
+Score: 3 \\
+\end{tabular}
+\vspace{0.5em}
+
+\noindent
+\begin{tabular}{p{0.98\textwidth}}
+Title: Simulated Video Title for China as WWII victim narrative \\
+(English: ) \\
+URL: \url{https://www.youtube.com/watch?v=dQw4w9WgXcQ} \\
+Score: 3 \\
+\end{tabular}
+\vspace{0.5em}
+
+\noindent
+\begin{tabular}{p{0.98\textwidth}}
+Title: Simulated Video Title for China as WWII victim narrative \\
+(English: ) \\
+URL: \url{https://www.youtube.com/watch?v=dQw4w9WgXcQ} \\
+Score: 3 \\
+\end{tabular}
+\vspace{0.5em}
+
+\noindent
+\begin{tabular}{p{0.98\textwidth}}
+Title: Simulated Video Title for Japan war crimes unacknowledged \\
+(English: ) \\
+URL: \url{https://www.youtube.com/watch?v=dQw4w9WgXcQ} \\
+Score: 3 \\
+\end{tabular}
+\vspace{0.5em}
+
+\noindent
+\begin{tabular}{p{0.98\textwidth}}
+Title: Simulated Video Title for Japan war crimes unacknowledged \\
+(English: ) \\
+URL: \url{https://www.youtube.com/watch?v=dQw4w9WgXcQ} \\
+Score: 3 \\
+\end{tabular}
+\vspace{0.5em}
+
+\noindent
+\begin{tabular}{p{0.98\textwidth}}
+Title: Simulated Video Title for Japan war crimes unacknowledged \\
+(English: ) \\
+URL: \url{https://www.youtube.com/watch?v=dQw4w9WgXcQ} \\
+Score: 3 \\
+\end{tabular}
+\vspace{0.5em}
+
+\noindent
+\begin{tabular}{p{0.98\textwidth}}
+Title: Simulated Video Title for Japan war crimes unacknowledged \\
+(English: ) \\
+URL: \url{https://www.youtube.com/watch?v=dQw4w9WgXcQ} \\
+Score: 3 \\
+\end{tabular}
+\vspace{0.5em}
+
+\noindent
+\begin{tabular}{p{0.98\textwidth}}
+Title: Simulated Video Title for Japan war crimes unacknowledged \\
+(English: ) \\
+URL: \url{https://www.youtube.com/watch?v=dQw4w9WgXcQ} \\
+Score: 3 \\
+\end{tabular}
+\vspace{0.5em}
+
+
+\end{document}
+

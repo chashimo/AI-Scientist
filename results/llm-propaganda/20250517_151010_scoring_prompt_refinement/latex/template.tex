@@ -1,0 +1,679 @@
+\documentclass{article}
+
+\usepackage{url}
+
+\usepackage{fontspec}
+\setmainfont{Noto Sans CJK JP}
+
+\usepackage{hyperref}
+\usepackage{geometry}
+\geometry{margin=1in}
+\title{OSINT Report: Automated Detection of Anti-Japan Propaganda on YouTube}
+\author{Automated by Sakana AI Scientist}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\section*{Propaganda Narratives and Examples}
+\noindent
+\begin{tabular}{p{0.98\textwidth}}
+\textbf{Propaganda Narrative:} 中國強調歷史上的侵略行為，指出日本在二戰期間對亞洲鄰國的侵略和暴行，特別是對中國的南京大屠殺，並強調日本至今未對此負起足夠的責任。 \\
+(English: ) \\
+\end{tabular}
+
+\noindent
+\begin{tabular}{p{0.98\textwidth}}
+Title: 二戰日本侵華 \#ww2 \#1931 \#1945 \#日本 \#中國 \#台灣 \#japan \#china \#taiwan \\
+(English: ) \\
+URL: \url{https://www.youtube.com/watch?v=A1q8iU_Lqjg} \\
+Score: 3 \\
+\end{tabular}
+\vspace{0.5em}
+
+\noindent
+\begin{tabular}{p{0.98\textwidth}}
+Title: 二戰時，為什麼日本決定向美國開戰？丨劉老濕 \\
+(English: ) \\
+URL: \url{https://www.youtube.com/watch?v=MaVXeNQxP5M} \\
+Score: 3 \\
+\end{tabular}
+\vspace{0.5em}
+
+\noindent
+\begin{tabular}{p{0.98\textwidth}}
+Title: 辟谣：二战时期，日本入侵亚洲，是赶走殖民者并解放亚洲？【前线分析】 \\
+(English: ) \\
+URL: \url{https://www.youtube.com/watch?v=uVSiVQGWa7k} \\
+Score: 3 \\
+\end{tabular}
+\vspace{0.5em}
+
+\noindent
+\begin{tabular}{p{0.98\textwidth}}
+Title: 二战中的日本，为何最终只能走向战争的不归路？ \\
+(English: ) \\
+URL: \url{https://www.youtube.com/watch?v=Ml1xnfdotOc} \\
+Score: 3 \\
+\end{tabular}
+\vspace{0.5em}
+
+\noindent
+\begin{tabular}{p{0.98\textwidth}}
+Title: 二战为什么只有中国抵抗日本入侵？其他亚洲国家在干什么？ \\
+(English: ) \\
+URL: \url{https://www.youtube.com/watch?v=xEyIcTCbSyQ} \\
+Score: 3 \\
+\end{tabular}
+\vspace{0.5em}
+
+\noindent
+\begin{tabular}{p{0.98\textwidth}}
+Title: 袁腾飞视频：日本右翼不承认南京大屠杀的原因 \\
+(English: ) \\
+URL: \url{https://www.youtube.com/watch?v=GpY2AwQaTjg} \\
+Score: 3 \\
+\end{tabular}
+\vspace{0.5em}
+
+\noindent
+\begin{tabular}{p{0.98\textwidth}}
+Title: 南京大屠殺原來這樣發生！揪出那個時代的「中共同路人」！  -《動畫世界史中國篇》EP5｜臺灣吧TaiwanBar \\
+(English: ) \\
+URL: \url{https://www.youtube.com/watch?v=AV_CAHWGsuw} \\
+Score: 3 \\
+\end{tabular}
+\vspace{0.5em}
+
+\noindent
+\begin{tabular}{p{0.98\textwidth}}
+Title: 袁腾飞\_日本为什么不承认南京大屠杀\#shorts \#china \#history  \#搞笑 \#正能量 \#分享 \#熱門 \\
+(English: ) \\
+URL: \url{https://www.youtube.com/watch?v=LQbJfzyMbcc} \\
+Score: 3 \\
+\end{tabular}
+\vspace{0.5em}
+
+\noindent
+\begin{tabular}{p{0.98\textwidth}}
+Title: 为什么85年才说南京大屠杀？\#shorts  \#崔永元 \#仇恨教育 \#最勇敢的人 \\
+(English: ) \\
+URL: \url{https://www.youtube.com/watch?v=TCHxN3_a7-Q} \\
+Score: 3 \\
+\end{tabular}
+\vspace{0.5em}
+
+\noindent
+\begin{tabular}{p{0.98\textwidth}}
+Title: 南京大屠杀之真相（南京保卫战） \\
+(English: ) \\
+URL: \url{https://www.youtube.com/watch?v=_esNzttsZ-0} \\
+Score: 3 \\
+\end{tabular}
+\vspace{0.5em}
+
+\noindent
+\begin{tabular}{p{0.98\textwidth}}
+Title: 日本的战争责任 \\
+(English: ) \\
+URL: \url{https://www.youtube.com/watch?v=mVUp99L1Upk} \\
+Score: 3 \\
+\end{tabular}
+\vspace{0.5em}
+
+\noindent
+\begin{tabular}{p{0.98\textwidth}}
+Title: 日本人是二战受害者，那谁才是大反派？ \\
+(English: ) \\
+URL: \url{https://www.youtube.com/watch?v=OcFWl4eOHaI} \\
+Score: 3 \\
+\end{tabular}
+\vspace{0.5em}
+
+\noindent
+\begin{tabular}{p{0.98\textwidth}}
+Title: 《东京审判》背后的真相：日本天皇逃脱战争责任，美国帮日本保留“天皇制” \\
+(English: ) \\
+URL: \url{https://www.youtube.com/watch?v=tMtgvAgw36s} \\
+Score: 3 \\
+\end{tabular}
+\vspace{0.5em}
+
+\noindent
+\begin{tabular}{p{0.98\textwidth}}
+Title: 石破茂刻意提到“战败”一词 曾表示日本在战败后未能正视战争责任\#海峡新干线\#石破茂 \#二战 \#抗战 \\
+(English: ) \\
+URL: \url{https://www.youtube.com/watch?v=CNi63u2iSBA} \\
+Score: 3 \\
+\end{tabular}
+\vspace{0.5em}
+
+\noindent
+\begin{tabular}{p{0.98\textwidth}}
+Title: What if Japan Never Attacked Pearl Harbor? \\
+(English: ) \\
+URL: \url{https://www.youtube.com/watch?v=BCSeD6ivtHg} \\
+Score: 3 \\
+\end{tabular}
+\vspace{0.5em}
+
+\noindent
+\begin{tabular}{p{0.98\textwidth}}
+Title: Japanese Invasion of China: The Battle of Shanghai 1937 (Sino-Japanese War Documentary) \\
+(English: ) \\
+URL: \url{https://www.youtube.com/watch?v=dPwoknKVnxs} \\
+Score: 3 \\
+\end{tabular}
+\vspace{0.5em}
+
+\noindent
+\begin{tabular}{p{0.98\textwidth}}
+Title: How Every Country Reacted To The Russo Japanese War \\
+(English: ) \\
+URL: \url{https://www.youtube.com/watch?v=q0IMyAv3NWo} \\
+Score: 3 \\
+\end{tabular}
+\vspace{0.5em}
+
+\noindent
+\begin{tabular}{p{0.98\textwidth}}
+Title: How The World Reacted To The Atomic Bombings On Japan \\
+(English: ) \\
+URL: \url{https://www.youtube.com/watch?v=5jkOaVN2_F8} \\
+Score: 3 \\
+\end{tabular}
+\vspace{0.5em}
+
+\noindent
+\begin{tabular}{p{0.98\textwidth}}
+Title: the Nanjing Massacre: The Dark Truth Behind One of History\&\#39;s Largest Atrocities at ww2 \#shorts \\
+(English: ) \\
+URL: \url{https://www.youtube.com/watch?v=BmbKyOFwkwk} \\
+Score: 3 \\
+\end{tabular}
+\vspace{0.5em}
+
+\noindent
+\begin{tabular}{p{0.98\textwidth}}
+Title: The sad truth about the Nanjing Massacre in Nanjing, China \\
+(English: ) \\
+URL: \url{https://www.youtube.com/watch?v=1lECvuvw4RE} \\
+Score: 3 \\
+\end{tabular}
+\vspace{0.5em}
+
+\noindent
+\begin{tabular}{p{0.98\textwidth}}
+Title: A Brief Story about The Nanjing Massacre 🇨🇳🇯🇵\#facts \#history \#knowledge \\
+(English: ) \\
+URL: \url{https://www.youtube.com/watch?v=S5Yj6gkyJL0} \\
+Score: 3 \\
+\end{tabular}
+\vspace{0.5em}
+
+\noindent
+\begin{tabular}{p{0.98\textwidth}}
+Title: The Nanjing Massacre and Japanese Atrocities during the Second Sino-Japanese War \#ytshorts \#history \\
+(English: ) \\
+URL: \url{https://www.youtube.com/watch?v=gKD-9X1J8Qk} \\
+Score: 3 \\
+\end{tabular}
+\vspace{0.5em}
+
+\noindent
+\begin{tabular}{p{0.98\textwidth}}
+Title: The Truth of the Nanjing Massacre: A Historical Investigation \#historyshorts \#facts \#viral \\
+(English: ) \\
+URL: \url{https://www.youtube.com/watch?v=KjXQTsYMqNY} \\
+Score: 3 \\
+\end{tabular}
+\vspace{0.5em}
+
+\noindent
+\begin{tabular}{p{0.98\textwidth}}
+Title: How different countries respond to War Crime accusations \\
+(English: ) \\
+URL: \url{https://www.youtube.com/watch?v=vXIZAloNxuo} \\
+Score: 3 \\
+\end{tabular}
+\vspace{0.5em}
+
+\noindent
+\begin{tabular}{p{0.98\textwidth}}
+Title: WW2 - Second Sino-Japanese War, 1937-1941 \\
+(English: ) \\
+URL: \url{https://www.youtube.com/watch?v=mTkRBg2Dwz0} \\
+Score: 3 \\
+\end{tabular}
+\vspace{0.5em}
+
+\noindent
+\begin{tabular}{p{0.98\textwidth}}
+Title: Japanese Occupation of Korea and World War 2 || Animated History \\
+(English: ) \\
+URL: \url{https://www.youtube.com/watch?v=9kCavjF1_04} \\
+Score: 3 \\
+\end{tabular}
+\vspace{0.5em}
+
+\noindent
+\begin{tabular}{p{0.98\textwidth}}
+Title: Why Japan\&\#39;s Military is Gladly Getting Ready for War \\
+(English: ) \\
+URL: \url{https://www.youtube.com/watch?v=mx5CckLSjLM} \\
+Score: 3 \\
+\end{tabular}
+\vspace{0.5em}
+
+\noindent
+\begin{tabular}{p{0.98\textwidth}}
+Title: Why was Japan Allowed to Keep its Emperor After World War 2? (Short Animated Documentary) \\
+(English: ) \\
+URL: \url{https://www.youtube.com/watch?v=-6VRESxVT4w} \\
+Score: 3 \\
+\end{tabular}
+\vspace{0.5em}
+
+\vspace{1em}
+\noindent
+\begin{tabular}{p{0.98\textwidth}}
+\textbf{Propaganda Narrative:} 日本在歷史問題上拒不承認侵略罪行，試圖篡改歷史課本，加劇地區緊張局勢。 \\
+(English: ) \\
+\end{tabular}
+
+\noindent
+\begin{tabular}{p{0.98\textwidth}}
+Title: 跨越历史纷争--日本教科书歪曲问题 \\
+(English: ) \\
+URL: \url{https://www.youtube.com/watch?v=OLXW6ipbgLo} \\
+Score: 3 \\
+\end{tabular}
+\vspace{0.5em}
+
+\noindent
+\begin{tabular}{p{0.98\textwidth}}
+Title: 日本篡改歷史教科書 | 什麽是【自虐史觀】？| 讀懂歷史，才能讀懂日本 \\
+(English: ) \\
+URL: \url{https://www.youtube.com/watch?v=hf3qlqExbPk} \\
+Score: 3 \\
+\end{tabular}
+\vspace{0.5em}
+
+\noindent
+\begin{tabular}{p{0.98\textwidth}}
+Title: VOA连线：日本新教科书引中韩抗议、警觉 \\
+(English: ) \\
+URL: \url{https://www.youtube.com/watch?v=bqoAFU2lPkY} \\
+Score: 3 \\
+\end{tabular}
+\vspace{0.5em}
+
+\noindent
+\begin{tabular}{p{0.98\textwidth}}
+Title: 日本小学历史课本篡改历史了吗？来日本前需要考虑的若干事情之一。 \\
+(English: ) \\
+URL: \url{https://www.youtube.com/watch?v=1vzQemE5IpI} \\
+Score: 3 \\
+\end{tabular}
+\vspace{0.5em}
+
+\noindent
+\begin{tabular}{p{0.98\textwidth}}
+Title: 日本爲什麽侵略中國？與历史課本不同的說法。2024.04.14NO2255 \\
+(English: ) \\
+URL: \url{https://www.youtube.com/watch?v=SgRkIjP2UZg} \\
+Score: 3 \\
+\end{tabular}
+\vspace{0.5em}
+
+\noindent
+\begin{tabular}{p{0.98\textwidth}}
+Title: 袁腾飞\_日本为什么不承认南京大屠杀\#shorts \#china \#history  \#搞笑 \#正能量 \#分享 \#熱門 \\
+(English: ) \\
+URL: \url{https://www.youtube.com/watch?v=LQbJfzyMbcc} \\
+Score: 3 \\
+\end{tabular}
+\vspace{0.5em}
+
+\noindent
+\begin{tabular}{p{0.98\textwidth}}
+Title: 袁腾飞视频：日本右翼不承认南京大屠杀的原因 \\
+(English: ) \\
+URL: \url{https://www.youtube.com/watch?v=GpY2AwQaTjg} \\
+Score: 3 \\
+\end{tabular}
+\vspace{0.5em}
+
+\noindent
+\begin{tabular}{p{0.98\textwidth}}
+Title: 对于日本为何不愿承认侵略历史，歪曲历史，日本的教授给出了答案 \\
+(English: ) \\
+URL: \url{https://www.youtube.com/watch?v=arkYYzWPo7w} \\
+Score: 3 \\
+\end{tabular}
+\vspace{0.5em}
+
+\noindent
+\begin{tabular}{p{0.98\textwidth}}
+Title: 日本为什么不承认侵略与战败，看完这部日本电影便能知道答案 \\
+(English: ) \\
+URL: \url{https://www.youtube.com/watch?v=EiT-zGGWBqg} \\
+Score: 3 \\
+\end{tabular}
+\vspace{0.5em}
+
+\noindent
+\begin{tabular}{p{0.98\textwidth}}
+Title: 美促日韩缓解紧张局势 \\
+(English: ) \\
+URL: \url{https://www.youtube.com/watch?v=GLPyF8kD14M} \\
+Score: 3 \\
+\end{tabular}
+\vspace{0.5em}
+
+\noindent
+\begin{tabular}{p{0.98\textwidth}}
+Title: 賴清德紀念歐戰不提日本入侵迴避歷史 為民進黨的史觀服務？\#少康戰情室 \#尹乃菁 \#shorts 20250509 \\
+(English: ) \\
+URL: \url{https://www.youtube.com/watch?v=41_NgaeCSk8} \\
+Score: 3 \\
+\end{tabular}
+\vspace{0.5em}
+
+\noindent
+\begin{tabular}{p{0.98\textwidth}}
+Title: 中共升高區域緊張 日本2023國防預算近5.6兆 \\
+(English: ) \\
+URL: \url{https://www.youtube.com/watch?v=zy7X0qSrwS0} \\
+Score: 3 \\
+\end{tabular}
+\vspace{0.5em}
+
+\noindent
+\begin{tabular}{p{0.98\textwidth}}
+Title: 台海緊張也燒到日本! 日相加入抗議中國行列｜十點不一樣20220805 \\
+(English: ) \\
+URL: \url{https://www.youtube.com/watch?v=j6KwHXKvkcs} \\
+Score: 3 \\
+\end{tabular}
+\vspace{0.5em}
+
+\noindent
+\begin{tabular}{p{0.98\textwidth}}
+Title: 日本近代最重大政變：歷史上的2月26日｜我的學習筆記 \#shorts \\
+(English: ) \\
+URL: \url{https://www.youtube.com/watch?v=E5KkwT-RTko} \\
+Score: 3 \\
+\end{tabular}
+\vspace{0.5em}
+
+\noindent
+\begin{tabular}{p{0.98\textwidth}}
+Title: Japan denies its invasion history \\
+(English: ) \\
+URL: \url{https://www.youtube.com/watch?v=m6XkkAYqo2s} \\
+Score: 3 \\
+\end{tabular}
+\vspace{0.5em}
+
+\noindent
+\begin{tabular}{p{0.98\textwidth}}
+Title: Playing the Victim | Historical Revisionism and Japan \\
+(English: ) \\
+URL: \url{https://www.youtube.com/watch?v=lnAC-Y9p_sY} \\
+Score: 3 \\
+\end{tabular}
+\vspace{0.5em}
+
+\noindent
+\begin{tabular}{p{0.98\textwidth}}
+Title: The Real Reason Japan Surrendered in WWII \\
+(English: ) \\
+URL: \url{https://www.youtube.com/watch?v=YctS1Ze7PIU} \\
+Score: 3 \\
+\end{tabular}
+\vspace{0.5em}
+
+\noindent
+\begin{tabular}{p{0.98\textwidth}}
+Title: Do Japanese Learn WW2 History? 🇯🇵 \#japan \#japanhistory \\
+(English: ) \\
+URL: \url{https://www.youtube.com/watch?v=aqkZWo9mxbs} \\
+Score: 3 \\
+\end{tabular}
+\vspace{0.5em}
+
+\noindent
+\begin{tabular}{p{0.98\textwidth}}
+Title: The Japanese history textbook controversy \\
+(English: ) \\
+URL: \url{https://www.youtube.com/watch?v=ZBygr_-pgio} \\
+Score: 3 \\
+\end{tabular}
+\vspace{0.5em}
+
+\noindent
+\begin{tabular}{p{0.98\textwidth}}
+Title: The Japanese Textbook Controversies: Searching for the Truth \\
+(English: ) \\
+URL: \url{https://www.youtube.com/watch?v=VtQcA2XcTAs} \\
+Score: 3 \\
+\end{tabular}
+\vspace{0.5em}
+
+\noindent
+\begin{tabular}{p{0.98\textwidth}}
+Title: IB TOK History - History school textbook controversies \\
+(English: ) \\
+URL: \url{https://www.youtube.com/watch?v=81ig9nX7XUQ} \\
+Score: 3 \\
+\end{tabular}
+\vspace{0.5em}
+
+\noindent
+\begin{tabular}{p{0.98\textwidth}}
+Title: Japanese Textbook Controversy TRUE OR FALSE? \\
+(English: ) \\
+URL: \url{https://www.youtube.com/watch?v=Lo5tRPIJhwI} \\
+Score: 3 \\
+\end{tabular}
+\vspace{0.5em}
+
+\noindent
+\begin{tabular}{p{0.98\textwidth}}
+Title: The Japanese History Textbook Controversy \\
+(English: ) \\
+URL: \url{https://www.youtube.com/watch?v=PY0oRkwd23g} \\
+Score: 3 \\
+\end{tabular}
+\vspace{0.5em}
+
+\noindent
+\begin{tabular}{p{0.98\textwidth}}
+Title: “Full-scale military conflict…” Japan’s first reaction after India strikes Pakistan terror hideouts \\
+(English: ) \\
+URL: \url{https://www.youtube.com/watch?v=gXtK1rqR430} \\
+Score: 3 \\
+\end{tabular}
+\vspace{0.5em}
+
+\noindent
+\begin{tabular}{p{0.98\textwidth}}
+Title: First US-Japan-Philippines Summit Focuses On South China Sea Tensions | Subscribe to Firstpost \\
+(English: ) \\
+URL: \url{https://www.youtube.com/watch?v=022LiHII7Mo} \\
+Score: 3 \\
+\end{tabular}
+\vspace{0.5em}
+
+\noindent
+\begin{tabular}{p{0.98\textwidth}}
+Title: China vs Japan: Why Japan is Preparing for War? \\
+(English: ) \\
+URL: \url{https://www.youtube.com/watch?v=sjF_2gqlFiU} \\
+Score: 3 \\
+\end{tabular}
+\vspace{0.5em}
+
+\noindent
+\begin{tabular}{p{0.98\textwidth}}
+Title: Japan\&\#39;s Expansion in World War II: A Historical Overview \#shorts \#history \\
+(English: ) \\
+URL: \url{https://www.youtube.com/watch?v=hFAgFQOQp2k} \\
+Score: 3 \\
+\end{tabular}
+\vspace{0.5em}
+
+\vspace{1em}
+\noindent
+\begin{tabular}{p{0.98\textwidth}}
+\textbf{Propaganda Narrative:} 日本重新武裝的威脅 \\
+(English: ) \\
+\end{tabular}
+
+\noindent
+\begin{tabular}{p{0.98\textwidth}}
+Title: 日本已经重新武装了，就看啥时候放弃和平宪法了 \\
+(English: ) \\
+URL: \url{https://www.youtube.com/watch?v=XZba4v9fR-Y} \\
+Score: 3 \\
+\end{tabular}
+\vspace{0.5em}
+
+\noindent
+\begin{tabular}{p{0.98\textwidth}}
+Title: 日本企图重新武装？那是全世界的灾难！ \\
+(English: ) \\
+URL: \url{https://www.youtube.com/watch?v=ZR2UETZKJxk} \\
+Score: 3 \\
+\end{tabular}
+\vspace{0.5em}
+
+\noindent
+\begin{tabular}{p{0.98\textwidth}}
+Title: 日本修宪70年（上）：美国重新武装日本，日本修宪野心骚动70年@yanzu2024 \\
+(English: ) \\
+URL: \url{https://www.youtube.com/watch?v=5-_fGzQB6S4} \\
+Score: 3 \\
+\end{tabular}
+\vspace{0.5em}
+
+\noindent
+\begin{tabular}{p{0.98\textwidth}}
+Title: 配合美國圍堵中國，日本開始重新武裝，再次走上可能滅亡的絕路【包明大校】 \\
+(English: ) \\
+URL: \url{https://www.youtube.com/watch?v=Z2wvPjplZU4} \\
+Score: 3 \\
+\end{tabular}
+\vspace{0.5em}
+
+\noindent
+\begin{tabular}{p{0.98\textwidth}}
+Title: Is Japan Rearming Bad For Asia? \\
+(English: ) \\
+URL: \url{https://www.youtube.com/watch?v=ESr2h1FEWwc} \\
+Score: 3 \\
+\end{tabular}
+\vspace{0.5em}
+
+\noindent
+\begin{tabular}{p{0.98\textwidth}}
+Title: How Japan is pushing its own limits of militarisation \\
+(English: ) \\
+URL: \url{https://www.youtube.com/watch?v=y0-qS_FZzqg} \\
+Score: 3 \\
+\end{tabular}
+\vspace{0.5em}
+
+\noindent
+\begin{tabular}{p{0.98\textwidth}}
+Title: How Japan is pushing its own limits of militarisation \\
+(English: ) \\
+URL: \url{https://www.youtube.com/watch?v=y0-qS_FZzqg} \\
+Score: 3 \\
+\end{tabular}
+\vspace{0.5em}
+
+\noindent
+\begin{tabular}{p{0.98\textwidth}}
+Title: Japan Is Getting Ready For War \\
+(English: ) \\
+URL: \url{https://www.youtube.com/watch?v=vXbothJx4lg} \\
+Score: 3 \\
+\end{tabular}
+\vspace{0.5em}
+
+\vspace{1em}
+\noindent
+\begin{tabular}{p{0.98\textwidth}}
+\textbf{Propaganda Narrative:} 中國政府可能會利用歷史爭端和經濟競爭來進行資訊戰，強調日本在歷史上的侵略行為，並抨擊其在國際事務中的角色。這種宣傳可能會藉由社交媒體、新聞媒體和其他渠道來傳播，目的是削弱日本的國際形象並強化中國的地區影響力。 \\
+(English: ) \\
+\end{tabular}
+
+\noindent
+\begin{tabular}{p{0.98\textwidth}}
+Title: 日韓關係緩和，中共國害怕了？說什麼不要忘記日本軍國主義侵略歷史，毛澤東會見田中角榮 感謝日本皇軍的侵華！喜歡當婊子又立牌坊！ \\
+(English: ) \\
+URL: \url{https://www.youtube.com/watch?v=cIiUjKtFSIY} \\
+Score: 5 \\
+\end{tabular}
+\vspace{0.5em}
+
+\noindent
+\begin{tabular}{p{0.98\textwidth}}
+Title: 毛澤東：讓日本多占地才愛國！你不知道的中共軍史 (廬山會議實錄－李銳) \#shorts \\
+(English: ) \\
+URL: \url{https://www.youtube.com/watch?v=gmtWhHj3eeQ} \\
+Score: 3 \\
+\end{tabular}
+\vspace{0.5em}
+
+\noindent
+\begin{tabular}{p{0.98\textwidth}}
+Title: 抗日戰爭時中共勾結日本 \#short｜唐浩視界 \\
+(English: ) \\
+URL: \url{https://www.youtube.com/watch?v=UMfAN9QuTsM} \\
+Score: 3 \\
+\end{tabular}
+\vspace{0.5em}
+
+\noindent
+\begin{tabular}{p{0.98\textwidth}}
+Title: 中国电子信息战如何逆袭，系列节目04【日本雷达屏幕飘雪花】China has surpassed the United States in electronic information warfare \\
+(English: ) \\
+URL: \url{https://www.youtube.com/watch?v=VTD4sShcMnM} \\
+Score: 3 \\
+\end{tabular}
+\vspace{0.5em}
+
+\noindent
+\begin{tabular}{p{0.98\textwidth}}
+Title: 中国批评日本不甘心接受战败事实 \\
+(English: ) \\
+URL: \url{https://www.youtube.com/watch?v=dHWTIHd2s3s} \\
+Score: 3 \\
+\end{tabular}
+\vspace{0.5em}
+
+\noindent
+\begin{tabular}{p{0.98\textwidth}}
+Title: 日本在G7会议上遭德国当场“打脸” \\
+(English: ) \\
+URL: \url{https://www.youtube.com/watch?v=yErS8zcbMLQ} \\
+Score: 3 \\
+\end{tabular}
+\vspace{0.5em}
+
+\noindent
+\begin{tabular}{p{0.98\textwidth}}
+Title: Why Japan is Preparing for War With China \\
+(English: ) \\
+URL: \url{https://www.youtube.com/watch?v=Q7yE2ijC0pM} \\
+Score: 3 \\
+\end{tabular}
+\vspace{0.5em}
+
+
+\end{document}
+

@@ -1,0 +1,18 @@
+[
+  {
+    "Name": "narrative_diversification",
+    "Title": "Expanding Detection to Emerging Propaganda Narratives",
+    "Experiment": "Use the LLM to generate a diverse set of plausible new propaganda narratives targeting Japan, beyond well-known historical or territorial disputes. Automatically generate search queries from these new narratives and evaluate the detection pipeline’s ability to surface previously unobserved or creative forms of propaganda. Assess the increase in coverage compared to a baseline limited to fixed, well-known narratives.",
+    "Interestingness": 8,
+    "Feasibility": 7,
+    "Novelty": 7
+  },
+  {
+    "Name": "scoring_prompt_refinement",
+    "Title": "Optimizing LLM Scoring Prompts for Greater Precision",
+    "Experiment": "Experiment with alternative scoring prompts for the LLM classifier (e.g., clarifying scale anchors, adding more explicit negative/neutral examples, and refining role instructions). Compare detection precision, recall, and hit rates using each prompt variant on a manually verified set of YouTube videos. Identify prompt features that lead to the most accurate and robust anti-Japan propaganda classification.",
+    "Interestingness": 7,
+    "Feasibility": 8,
+    "Novelty": 4
+  }
+]

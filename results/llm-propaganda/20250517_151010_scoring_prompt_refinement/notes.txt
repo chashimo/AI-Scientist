@@ -1,0 +1,40 @@
+# Title: Optimizing LLM Scoring Prompts for Greater Precision
+# Experiment description: Experiment with alternative scoring prompts for the LLM classifier (e.g., clarifying scale anchors, adding more explicit negative/neutral examples, and refining role instructions). Compare detection precision, recall, and hit rates using each prompt variant on a manually verified set of YouTube videos. Identify prompt features that lead to the most accurate and robust anti-Japan propaganda classification.
+## Run 0: Baseline
+Results: {'youtube_propaganda_detection': {'hit_rate': 0.933, 'hits': 28, 'total_videos': 30, 'out_files': {'jsonl': 'run_0/results_propaganda.jsonl', 'report_md': 'run_0/report_3629.md'}}}
+Description: Baseline results.
+## Run 1: Clarify Scale Anchors
+Experiment Description: This experiment aimed to clarify the scale anchors in the scoring prompt. The goal was to provide more explicit descriptions for each score level to help the model better distinguish between different levels of propaganda.
+Results: {'youtube_propaganda_detection': {'hit_rate': 0.9, 'hits': 27, 'total_videos': 30, 'out_files': {'jsonl': 'run_1/results_propaganda.jsonl', 'report_md': 'run_1/report_4195.md'}}}
+
+## Run 2: Add Negative/Neutral Examples
+Experiment Description: This experiment aimed to enhance the scoring prompt by including explicit examples of negative and neutral content. The goal was to provide the model with clearer guidance on what constitutes non-propaganda content.
+Results: {'youtube_propaganda_detection': {'hit_rate': 0.267, 'hits': 8, 'total_videos': 30, 'out_files': {'jsonl': 'run_2/results_propaganda.jsonl', 'report_md': 'run_2/report_9523.md'}}}
+# Title: Optimizing LLM Scoring Prompts for Greater Precision
+# Experiment description: Experiment with alternative scoring prompts for the LLM classifier (e.g., clarifying scale anchors, adding more explicit negative/neutral examples, and refining role instructions). Compare detection precision, recall, and hit rates using each prompt variant on a manually verified set of YouTube videos. Identify prompt features that lead to the most accurate and robust anti-Japan propaganda classification.
+
+## Run 0: Baseline
+Results: {'youtube_propaganda_detection': {'hit_rate': 0.933, 'hits': 28, 'total_videos': 30, 'out_files': {'jsonl': 'run_0/results_propaganda.jsonl', 'report_md': 'run_0/report_3629.md'}}}
+Description: Baseline results.
+
+## Run 1: Clarify Scale Anchors
+Experiment Description: This experiment aimed to clarify the scale anchors in the scoring prompt. The goal was to provide more explicit descriptions for each score level to help the model better distinguish between different levels of propaganda.
+Results: {'youtube_propaganda_detection': {'hit_rate': 0.9, 'hits': 27, 'total_videos': 30, 'out_files': {'jsonl': 'run_1/results_propaganda.jsonl', 'report_md': 'run_1/report_4195.md'}}}
+
+## Run 2: Add Negative/Neutral Examples
+Experiment Description: This experiment aimed to enhance the scoring prompt by including explicit examples of negative and neutral content. The goal was to provide the model with clearer guidance on what constitutes non-propaganda content.
+Results: {'youtube_propaganda_detection': {'hit_rate': 0.267, 'hits': 8, 'total_videos': 30, 'out_files': {'jsonl': 'run_2/results_propaganda.jsonl', 'report_md': 'run_2/report_9523.md'}}}
+
+## Plot Descriptions
+
+### Hit Rates Plot
+- **Filename:** hit_rates.png
+- **Description:** This plot illustrates the hit rates for each experiment. The hit rate is calculated as the number of videos correctly identified as propaganda divided by the total number of videos analyzed. It provides a visual comparison of the effectiveness of each prompt variant in detecting anti-Japan propaganda. The baseline achieved the highest hit rate, while the addition of negative/neutral examples resulted in the lowest hit rate.
+
+### Total Hits Plot
+- **Filename:** hits.png
+- **Description:** This plot shows the total number of hits (videos identified as propaganda) for each experiment. It highlights the absolute number of successful detections across different prompt configurations. The baseline and the clarified scale anchors experiments had similar high numbers of hits, whereas the experiment with negative/neutral examples had significantly fewer hits.
+
+### Total Videos Analyzed Plot
+- **Filename:** total_videos.png
+- **Description:** This plot displays the total number of videos analyzed in each experiment. It serves as a reference to ensure that each experiment was conducted on the same dataset size, maintaining consistency across the experiments. All experiments analyzed the same number of videos, ensuring a fair comparison of results.

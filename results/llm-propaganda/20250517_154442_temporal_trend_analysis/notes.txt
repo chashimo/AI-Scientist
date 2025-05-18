@@ -1,0 +1,21 @@
+# Title: Incorporating Temporal Analysis for Evolving Propaganda Detection
+# Experiment description: Modify the pipeline to tag narratives and search results with timestamps. Implement a basic time-series analysis to detect shifts in the frequency and type of propaganda themes over time. Initially, focus on internal trend analysis without external event correlation. Evaluate if this approach improves the system's adaptability to new and emerging narratives and provides insights into recurring propaganda cycles.
+## Run 0: Baseline
+
+## Run 1: Timestamp Tagging
+Experiment Description: In this run, we modified the pipeline to tag narratives and search results with timestamps. This allows us to track when each piece of data was generated or retrieved, providing a foundation for temporal analysis.
+Results: {'youtube_propaganda_detection': {'hit_rate': 0.833, 'hits': 25, 'total_videos': 30, 'out_files': {'jsonl': 'run_1/results_propaganda.jsonl', 'report_md': 'run_1/report_3309.md'}}}
+Observations: The hit rate decreased slightly compared to the baseline. This run established the groundwork for further temporal analysis by incorporating timestamps.
+
+## Run 2: Basic Time-Series Analysis
+Experiment Description: In this run, we implemented a basic time-series analysis to detect shifts in the frequency and type of propaganda themes over time. This involved aggregating data by time intervals and analyzing trends to understand how propaganda narratives evolve.
+Results: {'youtube_propaganda_detection': {'hit_rate': 0.3, 'hits': 9, 'total_videos': 30, 'out_files': {'jsonl': 'run_2/results_propaganda.jsonl', 'report_md': 'run_2/report_4229.md'}}}
+Observations: The hit rate decreased significantly compared to the baseline and Run 1. This suggests that while the time-series analysis provides insights into temporal trends, it may not directly enhance the detection of propaganda in its current form. Further refinement and integration with other analytical methods might be necessary.
+
+## Plot Descriptions
+
+### Plot 1: Propaganda Frequency Over Time (Run 2)
+- **Filename**: `run_3/trend_analysis.png`
+- **Description**: This plot illustrates the frequency of propaganda-related content detected over time during Run 2. The x-axis represents the dates on which the data was collected, while the y-axis shows the frequency of detected propaganda themes. Each point on the plot corresponds to the number of propaganda instances identified on a particular day. This visualization helps in understanding the temporal distribution and potential peaks in propaganda activity, which can be crucial for identifying trends and cycles in propaganda dissemination.
+Results: {'youtube_propaganda_detection': {'hit_rate': 0.933, 'hits': 28, 'total_videos': 30, 'out_files': {'jsonl': 'run_0/results_propaganda.jsonl', 'report_md': 'run_0/report_3629.md'}}}
+Description: Baseline results.

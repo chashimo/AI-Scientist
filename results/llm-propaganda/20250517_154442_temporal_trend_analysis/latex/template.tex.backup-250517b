@@ -1,0 +1,66 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{geometry}
+\geometry{margin=1in}
+\title{OSINT Report: Automated Detection of Anti-Japan Propaganda on YouTube}
+\author{Automated by Sakana AI Scientist}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+This report summarizes the findings of an automated pipeline for the detection of anti-Japan propaganda content on YouTube, using LLM-based narrative generation, multilingual search, and scoring. The system aims to discover not only well-known but also emerging, less-documented propaganda narratives.\\
+\vspace{0.5em}
+{\bf Note:} This is a machine-generated OSINT (Open Source Intelligence) report and is intended for research and technical reference purposes.
+\end{abstract}
+
+\section*{1. Executive Summary}
+% EXEC_SUMMARY_PLACEHOLDER
+A concise overview of key findings, newly identified narratives, and notable trends.
+
+\section*{2. Detection Workflow Overview}
+% WORKFLOW_PLACEHOLDER
+Briefly describe the pipeline: LLM-based narrative generation $\rightarrow$ query generation $\rightarrow$ YouTube API search $\rightarrow$ LLM-based scoring and filtering.
+
+\section*{3. Key Findings: Propaganda Narratives and Examples}
+% FINDINGS_PLACEHOLDER
+\begin{itemize}
+    % \item Narrative: [example narrative 1]
+    %   \begin{itemize}
+    %     \item Example Video: [Title], [YouTube Link], Score: [x]
+    %   \end{itemize}
+    % \item Narrative: [example narrative 2]
+\end{itemize}
+
+\section*{4. Query Performance Overview}
+% PERFORMANCE_PLACEHOLDER
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.7\linewidth]{hits.png}
+    \caption{Number of hits per query}
+\end{figure}
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.7\linewidth]{hit_rate.png}
+    \caption{Hit rate (proportion of propaganda-detected videos per query)}
+\end{figure}
+
+\section*{5. Recommendations and Next Steps}
+% RECOMMENDATIONS_PLACEHOLDER
+
+Actionable suggestions for refining detection, query tuning, or operational deployment.
+
+\section*{6. Appendix: Technical Details}
+% APPENDIX_PLACEHOLDER
+- List of search queries used\\
+- LLM prompts (narrative generation, scoring)\\
+- Pipeline parameters\\
+- Raw statistics (total videos searched, scoring distributions, etc.)
+
+\end{document}
+

@@ -1,0 +1,26 @@
+[
+    {
+        "Name": "narrative_diversification",
+        "Title": "Expanding Detection to Emerging Propaganda Narratives",
+        "Experiment": "Use the LLM to generate a diverse set of plausible new propaganda narratives targeting Japan, beyond well-known historical or territorial disputes. Automatically generate search queries from these new narratives and evaluate the detection pipeline\u2019s ability to surface previously unobserved or creative forms of propaganda. Assess the increase in coverage compared to a baseline limited to fixed, well-known narratives.",
+        "Interestingness": 8,
+        "Feasibility": 7,
+        "Novelty": 7
+    },
+    {
+        "Name": "scoring_prompt_refinement",
+        "Title": "Optimizing LLM Scoring Prompts for Greater Precision",
+        "Experiment": "Experiment with alternative scoring prompts for the LLM classifier (e.g., clarifying scale anchors, adding more explicit negative/neutral examples, and refining role instructions). Compare detection precision, recall, and hit rates using each prompt variant on a manually verified set of YouTube videos. Identify prompt features that lead to the most accurate and robust anti-Japan propaganda classification.",
+        "Interestingness": 7,
+        "Feasibility": 8,
+        "Novelty": 4
+    },
+    {
+        "Name": "temporal_trend_analysis",
+        "Title": "Incorporating Temporal Analysis for Evolving Propaganda Detection",
+        "Experiment": "Modify the pipeline to tag narratives and search results with timestamps. Implement a basic time-series analysis to detect shifts in the frequency and type of propaganda themes over time. Initially, focus on internal trend analysis without external event correlation. Evaluate if this approach improves the system's adaptability to new and emerging narratives and provides insights into recurring propaganda cycles.",
+        "Interestingness": 9,
+        "Feasibility": 7,
+        "Novelty": 8
+    }
+]

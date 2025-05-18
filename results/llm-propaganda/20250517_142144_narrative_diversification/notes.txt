@@ -1,0 +1,27 @@
+# Title: Expanding Detection to Emerging Propaganda Narratives
+# Experiment description: Use the LLM to generate a diverse set of plausible new propaganda narratives targeting Japan, beyond well-known historical or territorial disputes. Automatically generate search queries from these new narratives and evaluate the detection pipeline’s ability to surface previously unobserved or creative forms of propaganda. Assess the increase in coverage compared to a baseline limited to fixed, well-known narratives.
+## Run 0: Baseline
+Results: {'youtube_propaganda_detection': {'hit_rate': 0.933, 'hits': 28, 'total_videos': 30, 'out_files': {'jsonl': 'run_0/results_propaganda.jsonl', 'report_md': 'run_0/report_3629.md'}}}
+Description: Baseline results.
+
+## Run 1: Diverse Narrative Generation
+Results: {'youtube_propaganda_detection': {'hit_rate': 0.267, 'hits': 8, 'total_videos': 30, 'out_files': {'jsonl': 'run_1/results_propaganda.jsonl', 'report_md': 'run_1/report_3614.md'}}}
+Description: Modified the narrative generation prompt to encourage the LLM to create a diverse set of new propaganda narratives, focusing on creative and less-known themes. The aim was to evaluate the pipeline's ability to detect previously unobserved forms of propaganda. The results showed a lower hit rate compared to the baseline, indicating that the generated narratives might not align well with existing content.
+
+## Run 2: Increased Query Generation
+Results: {'youtube_propaganda_detection': {'hit_rate': 0.04, 'hits': 2, 'total_videos': 50, 'out_files': {'jsonl': 'run_2/results_propaganda.jsonl', 'report_md': 'run_2/report_1131.md'}}}
+Description: Increased the number of search queries generated from each narrative to ensure broader coverage. The aim was to assess if more queries lead to better detection rates. The results showed a further decrease in the hit rate, suggesting that simply generating more queries may not be effective if the underlying narratives are not well-aligned with existing content.
+
+# Plot Descriptions
+
+## Hit Rate Comparison Across Runs
+Filename: hit_rate_comparison.png
+Description: This plot compares the hit rates of detected propaganda across different experimental runs. The hit rate is calculated as the proportion of videos identified as propaganda out of the total videos processed. The baseline run shows a significantly higher hit rate compared to the experimental runs, indicating that the baseline approach was more effective in detecting propaganda. The diverse narrative generation and increased query generation runs show a marked decrease in hit rate, suggesting challenges in aligning new narratives with existing content.
+
+## Total Hits Comparison Across Runs
+Filename: total_hits_comparison.png
+Description: This plot illustrates the total number of propaganda videos detected in each experimental run. The baseline run detected the highest number of propaganda videos, while the experimental runs detected significantly fewer. This suggests that the new narratives and query strategies may not have been as effective in surfacing propaganda content, possibly due to the novelty or misalignment of the generated narratives.
+
+## Total Videos Processed Across Runs
+Filename: total_videos_comparison.png
+Description: This plot shows the total number of videos processed in each run. The increased query generation run processed the most videos, reflecting the higher number of queries generated. Despite processing more videos, the hit rate and total hits were lower, indicating that simply increasing the number of queries does not necessarily lead to better detection outcomes. This highlights the importance of query quality and relevance in the detection process.
