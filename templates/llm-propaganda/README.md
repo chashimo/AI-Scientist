@@ -29,8 +29,11 @@ This template demonstrates how LLM-based systems can assist in:
 
 ## Installation
 
+This template requires the following Python dependencies:
+
 ```bash
-pip install openai google-api-python-client matplotlib tqdm
+cd templates/llm-propaganda
+pip install -r requirements.txt
 ```
 
 ---
