@@ -29,7 +29,7 @@ This template demonstrates how LLM-based systems can assist in:
 
 ## Installation
 
-This template requires the following Python dependencies:
+This template requires the Python dependencies specified in `requirements.txt`:
 
 ```bash
 cd templates/llm-propaganda
