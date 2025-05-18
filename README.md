@@ -391,3 +391,15 @@ docker run -it -e OPENAI_API_KEY=$OPENAI_API_KEY \
 ## Star History
 
 [![Star History Chart](https://api.star-history.com/svg?repos=SakanaAI/AI-Scientist&type=Date)](https://star-history.com/#SakanaAI/AI-Scientist&Date)
+
+
+---
+
+## Custom Template
+
+This fork includes a custom template located at `templates/llm-propaganda/`, which demonstrates the use of LLMs for automated analysis tasks.
+
+Please refer to the template's own README for implementation details.
+
+For context or questions, please contact the repository owner directly.
+
