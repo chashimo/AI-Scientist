@@ -84,8 +84,7 @@ python launch_scientist.py \
 	--num-ideas 1 \
 	--skip-novelty-check \
 	--model "gpt-4o" \
-	2> llm-propagana.err \
-	> llm-propagana.out
+	--engine openalex
 ```
 
 ---
