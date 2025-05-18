@@ -57,9 +57,9 @@ export OPENAI_API_KEY="your-openai-key-here"
 
 ---
 
-## Running the Experiment
+## Running the Baseline (`run_0`) Experiment
 
-Run the experiment to generate narratives, collect YouTube data, and classify results:
+Run the baseline experiment to generate narratives, collect YouTube data, and classify results:
 
 ```bash
 python experiment.py --out_dir run_0
