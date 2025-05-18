@@ -1,0 +1,10 @@
+openai==1.75.0
+google-api-python-client
+matplotlib
+tqdm
+tiktoken
+Pillow
+pyalex
+fonts-noto-cjk
+textblob
+vaderSentiment
